@@ -13,18 +13,9 @@
 		49B23CCB1AA8044C00C63F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B23CC91AA8044C00C63F57 /* Main.storyboard */; };
 		49B23CCD1AA8044C00C63F57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B23CCC1AA8044C00C63F57 /* Images.xcassets */; };
 		49B23CD01AA8044C00C63F57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B23CCE1AA8044C00C63F57 /* LaunchScreen.xib */; };
-		49B23CDC1AA8044C00C63F57 /* yyPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B23CDB1AA8044C00C63F57 /* yyPickerTests.m */; };
+		49B23CE81AA8064D00C63F57 /* yyPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B23CE71AA8064D00C63F57 /* yyPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49B23CEB1AA807E900C63F57 /* PickerDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B23CEA1AA807E900C63F57 /* PickerDataItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		49B23CD61AA8044C00C63F57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 49B23CB41AA8044C00C63F57 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 49B23CBB1AA8044C00C63F57;
-			remoteInfo = yyPicker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		49B23CBC1AA8044C00C63F57 /* yyPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +28,16 @@
 		49B23CCA1AA8044C00C63F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49B23CCC1AA8044C00C63F57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		49B23CCF1AA8044C00C63F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		49B23CD51AA8044C00C63F57 /* yyPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yyPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B23CDA1AA8044C00C63F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B23CDB1AA8044C00C63F57 /* yyPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyPickerTests.m; sourceTree = "<group>"; };
+		49B23CE61AA8064D00C63F57 /* yyPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yyPicker.h; sourceTree = "<group>"; };
+		49B23CE71AA8064D00C63F57 /* yyPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yyPicker.m; sourceTree = "<group>"; };
+		49B23CE91AA807E900C63F57 /* PickerDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerDataItem.h; sourceTree = "<group>"; };
+		49B23CEA1AA807E900C63F57 /* PickerDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerDataItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49B23CB91AA8044C00C63F57 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49B23CD21AA8044C00C63F57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				49B23CBC1AA8044C00C63F57 /* yyPicker.app */,
-				49B23CD51AA8044C00C63F57 /* yyPickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +74,7 @@
 				49B23CC91AA8044C00C63F57 /* Main.storyboard */,
 				49B23CCC1AA8044C00C63F57 /* Images.xcassets */,
 				49B23CCE1AA8044C00C63F57 /* LaunchScreen.xib */,
+				49B23CE51AA8048300C63F57 /* yyPicker */,
 				49B23CBF1AA8044C00C63F57 /* Supporting Files */,
 			);
 			path = yyPicker;
@@ -119,6 +106,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49B23CE51AA8048300C63F57 /* yyPicker */ = {
+			isa = PBXGroup;
+			children = (
+				49B23CE61AA8064D00C63F57 /* yyPicker.h */,
+				49B23CE71AA8064D00C63F57 /* yyPicker.m */,
+				49B23CE91AA807E900C63F57 /* PickerDataItem.h */,
+				49B23CEA1AA807E900C63F57 /* PickerDataItem.m */,
+			);
+			path = yyPicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +137,6 @@
 			productReference = 49B23CBC1AA8044C00C63F57 /* yyPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		49B23CD41AA8044C00C63F57 /* yyPickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49B23CE21AA8044C00C63F57 /* Build configuration list for PBXNativeTarget "yyPickerTests" */;
-			buildPhases = (
-				49B23CD11AA8044C00C63F57 /* Sources */,
-				49B23CD21AA8044C00C63F57 /* Frameworks */,
-				49B23CD31AA8044C00C63F57 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				49B23CD71AA8044C00C63F57 /* PBXTargetDependency */,
-			);
-			name = yyPickerTests;
-			productName = yyPickerTests;
-			productReference = 49B23CD51AA8044C00C63F57 /* yyPickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +148,6 @@
 				TargetAttributes = {
 					49B23CBB1AA8044C00C63F57 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					49B23CD41AA8044C00C63F57 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 49B23CBB1AA8044C00C63F57;
 					};
 				};
 			};
@@ -189,7 +165,6 @@
 			projectRoot = "";
 			targets = (
 				49B23CBB1AA8044C00C63F57 /* yyPicker */,
-				49B23CD41AA8044C00C63F57 /* yyPickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49B23CD31AA8044C00C63F57 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,28 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B23CC81AA8044C00C63F57 /* ViewController.m in Sources */,
+				49B23CE81AA8064D00C63F57 /* yyPicker.m in Sources */,
+				49B23CEB1AA807E900C63F57 /* PickerDataItem.m in Sources */,
 				49B23CC51AA8044C00C63F57 /* AppDelegate.m in Sources */,
 				49B23CC21AA8044C00C63F57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49B23CD11AA8044C00C63F57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49B23CDC1AA8044C00C63F57 /* yyPickerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		49B23CD71AA8044C00C63F57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 49B23CBB1AA8044C00C63F57 /* yyPicker */;
-			targetProxy = 49B23CD61AA8044C00C63F57 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49B23CC91AA8044C00C63F57 /* Main.storyboard */ = {
@@ -343,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iOS Development: bin chen (668VF56L6S)";
 				INFOPLIST_FILE = yyPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,40 +311,6 @@
 				INFOPLIST_FILE = yyPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		49B23CE31AA8044C00C63F57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = yyPickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yyPicker.app/yyPicker";
-			};
-			name = Debug;
-		};
-		49B23CE41AA8044C00C63F57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = yyPickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yyPicker.app/yyPicker";
 			};
 			name = Release;
 		};
@@ -412,14 +333,7 @@
 				49B23CE11AA8044C00C63F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		49B23CE21AA8044C00C63F57 /* Build configuration list for PBXNativeTarget "yyPickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49B23CE31AA8044C00C63F57 /* Debug */,
-				49B23CE41AA8044C00C63F57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

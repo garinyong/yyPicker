@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "yyPicker.h"
+#import "PickerDataItem.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableArray *pikeDataList = [NSMutableArray array];
+    
+    UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 100)];
+    popView.backgroundColor = [UIColor greenColor];
+    
+    PickerDataItem *item1 = [[PickerDataItem alloc] init:@"书籍" itemImg:nil selectPickClick:^(id data) {
+        
+    } itemUI:popView];
+    
+    popView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 350)];
+    popView.backgroundColor = [UIColor redColor];
+    
+    PickerDataItem *item2 = [[PickerDataItem alloc] init:@"电器" itemImg:nil selectPickClick:^(id data) {
+        
+    } itemUI:popView];
+    
+    popView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 170)];
+    popView.backgroundColor = [UIColor yellowColor];
+    
+    PickerDataItem *item3 = [[PickerDataItem alloc] init:@"区域" itemImg:nil selectPickClick:^(id data) {
+        
+    } itemUI:popView];
+    
+    popView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 90)];
+    popView.backgroundColor = [UIColor blueColor];
+    
+    PickerDataItem *item4 = [[PickerDataItem alloc] init:@"美食" itemImg:nil selectPickClick:^(id data) {
+        
+    } itemUI:popView];
+    
+    [pikeDataList addObject:item1];
+    [pikeDataList addObject:item2];
+    [pikeDataList addObject:item3];
+    [pikeDataList addObject:item4];
+    
+    yyPicker *picker = [[yyPicker alloc] initWithFrame:CGRectMake(0, 50 , self.view.bounds.size.width, 49) direction:Down itemList:pikeDataList];
+    
+    [self.view addSubview:picker];
 }
 
 - (void)didReceiveMemoryWarning {
