@@ -20,7 +20,7 @@
     [super dealloc];
 }
 
--(id) init:(NSString *) title itemImg:(UIImage *) itemImg selectPickClick:(selectPickBlock) selectPickClick itemUI:(UIView *) itemUI;
+-(id) init:(NSString *) title itemImg:(UIImage *) itemImg selectPickClick:(selectPickBlock) selectPickClick itemUI:(PopBasicView *) itemUI;
 {
     if (self = [super init])
     {

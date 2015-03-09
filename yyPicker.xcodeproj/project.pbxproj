@@ -15,6 +15,8 @@
 		49B23CD01AA8044C00C63F57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B23CCE1AA8044C00C63F57 /* LaunchScreen.xib */; };
 		49B23CE81AA8064D00C63F57 /* yyPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B23CE71AA8064D00C63F57 /* yyPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		49B23CEB1AA807E900C63F57 /* PickerDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B23CEA1AA807E900C63F57 /* PickerDataItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49EBD6C51AADAAF5006C22ED /* PopBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBD6C41AADAAF5006C22ED /* PopBasicView.m */; };
+		49EBD6C81AADAE6C006C22ED /* PView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBD6C71AADAE6C006C22ED /* PView1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		49B23CE71AA8064D00C63F57 /* yyPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yyPicker.m; sourceTree = "<group>"; };
 		49B23CE91AA807E900C63F57 /* PickerDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerDataItem.h; sourceTree = "<group>"; };
 		49B23CEA1AA807E900C63F57 /* PickerDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerDataItem.m; sourceTree = "<group>"; };
+		49EBD6C31AADAAF5006C22ED /* PopBasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBasicView.h; sourceTree = "<group>"; };
+		49EBD6C41AADAAF5006C22ED /* PopBasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBasicView.m; sourceTree = "<group>"; };
+		49EBD6C61AADAE6C006C22ED /* PView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PView1.h; sourceTree = "<group>"; };
+		49EBD6C71AADAE6C006C22ED /* PView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PView1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				49B23CE71AA8064D00C63F57 /* yyPicker.m */,
 				49B23CE91AA807E900C63F57 /* PickerDataItem.h */,
 				49B23CEA1AA807E900C63F57 /* PickerDataItem.m */,
+				49EBD6C31AADAAF5006C22ED /* PopBasicView.h */,
+				49EBD6C41AADAAF5006C22ED /* PopBasicView.m */,
+				49EBD6C61AADAE6C006C22ED /* PView1.h */,
+				49EBD6C71AADAE6C006C22ED /* PView1.m */,
 			);
 			path = yyPicker;
 			sourceTree = "<group>";
@@ -189,7 +199,9 @@
 			files = (
 				49B23CC81AA8044C00C63F57 /* ViewController.m in Sources */,
 				49B23CE81AA8064D00C63F57 /* yyPicker.m in Sources */,
+				49EBD6C81AADAE6C006C22ED /* PView1.m in Sources */,
 				49B23CEB1AA807E900C63F57 /* PickerDataItem.m in Sources */,
+				49EBD6C51AADAAF5006C22ED /* PopBasicView.m in Sources */,
 				49B23CC51AA8044C00C63F57 /* AppDelegate.m in Sources */,
 				49B23CC21AA8044C00C63F57 /* main.m in Sources */,
 			);

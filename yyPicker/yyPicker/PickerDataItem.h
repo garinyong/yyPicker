@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "PopBasicView.h"
 
 typedef void(^selectPickBlock)(id data);
 
@@ -19,6 +20,6 @@ typedef void(^selectPickBlock)(id data);
 @property (nonatomic,copy) selectPickBlock selectPickClick;  //选中回调
 
 
--(id) init:(NSString *) title itemImg:(UIImage *) itemImg selectPickClick:(selectPickBlock) selectPickClick itemUI:(UIView *) itemUI;
+-(id) init:(NSString *) title itemImg:(UIImage *) itemImg selectPickClick:(selectPickBlock) selectPickClick itemUI:(PopBasicView *) itemUI;
 
 @end

@@ -134,20 +134,6 @@
     return selectItem.itemUI;
 }
 
--(UIView *) getNewPopView:(int) nextSelectIndex
-{
-    UIView *temView = [[[UIView alloc] initWithFrame:barView.bounds] autorelease];
-    temView.backgroundColor = [UIColor greenColor];
-    return temView;
-}
-
--(UIView *) getTopView
-{
-    UIView *temView = [[[UIView alloc] initWithFrame:barView.bounds] autorelease];
-    temView.backgroundColor = [UIColor greenColor];
-    return temView;
-}
-
 -(void) showTopView:(UIView *) newTopView
 {
     if (newTopView == nil)

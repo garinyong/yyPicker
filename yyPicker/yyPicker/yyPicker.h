@@ -17,4 +17,6 @@ typedef enum : NSUInteger {
 
 -(id) initWithFrame:(CGRect)frame direction:(PickerDirection) direction_ itemList:(NSArray *) itemList_;
 
+-(void) closeTopView:(BOOL) animated;
+
 @end
