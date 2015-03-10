@@ -21,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    UIView *bgView = [UIView new];
+    bgView.frame = CGRectMake(0, 50, self.view.bounds.size.width, self.view.bounds.size.height - 100);
+    bgView.backgroundColor = [UIColor yellowColor];
+//    bgView.clipsToBounds = YES;
+    [self.view addSubview:bgView];
+    
     NSMutableArray *pikeDataList = [NSMutableArray array];
     
     PopBasicView *popView = [[PopBasicView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 100)];
@@ -58,7 +64,7 @@
     
     yyPicker *picker = [[yyPicker alloc] initWithFrame:CGRectMake(0, 50 , self.view.bounds.size.width, 49) direction:Down itemList:pikeDataList];
     
-    [self.view addSubview:picker];
+    [bgView addSubview:picker];
 }
 
 - (void)didReceiveMemoryWarning {

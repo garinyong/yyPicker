@@ -162,6 +162,8 @@
         markView = nil;
     }
     
+    CGRect barViewInWindow = [barView convertRect:barView.bounds toView:[UIApplication sharedApplication].keyWindow];
+    
     if (!markView)
     {
         if (_direction == Top)
